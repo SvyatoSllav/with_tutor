@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}{{ title }}{% endblock title %}
+{% load static %}
+{% block main_data %}
+    {% for material in page_obj %}
+        <div class="card text-center mb-5 mt-5">
+            <div class="card-body">
+                <h5 class="card-title"> {{ material.title }} <span style='color:red'>Здесь будет тема</span> </h5>
+                <p class="card-text">{{ material.text }} <span style='color:red'>Здесь будет текст</span></p>
+                    <a href="#" class="btn btn-primary">Здесь будет ссылка на саму запись</a>
+            </div>
+            <div class="card-footer text-muted">
+                2 days ago
+            </div>
+        </div>
+        {% comment %} {% if not forloop.last %} <hr> {% endif %} {% endcomment %}
+    {% endfor %}
+    {% include 'includes/paginator.html' %}
+{% endblock main_data %}

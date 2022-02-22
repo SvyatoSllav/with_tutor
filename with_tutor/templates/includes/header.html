@@ -1,0 +1,28 @@
+{% load static %}
+<nav class="navbar navbar-light" style="background-color: lightskyblue">
+    <div class="container">
+      <a class="navbar-brand p-0" href="{% url 'about:index' %}">
+        <img src="{% static 'img/logos.png' %}" width="100" height="100" class="d-inline-block align-top" alt="">
+        <span style="color:tomato; font-size:31px" class=''>With</span> <span style="font-size:31px">tutor</span>
+      </a>
+      {% with request.resolver_match.view_name as view_name %}
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link {% if view_name == 'about:index' %}active{% endif %}" style='font-size:26px' href="{% url 'about:index' %}">О нас</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link {% if view_name == 'vocabulary:vocabulary_materials' %}active{% endif %}" style='font-size:26px' href="{% url 'vocabulary:vocabulary_materials' %}">Лексика</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link {% if view_name == 'grammar:grammar' %}active{% endif %}" style='font-size:26px' href="{% url 'grammar:grammar' %}">Грамматика</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" style='font-size:26px' href="#">Практика</a>
+        </li>
+      {% endwith %}
+      </ul>
+    </div>
+  </nav>      

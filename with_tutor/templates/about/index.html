@@ -1,0 +1,127 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Главная страница{% endblock title %}
+{% block main_data %}
+
+<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+  </video>
+  <h2 class='text-center mb-5 pt-3' style="color:coral">Наша команда</h2>
+<section class="section about-section gray-bg mb-5 mt-5" id="about">
+    <div class="container">
+        <div class="row align-items-center flex-row-reverse">
+            <div class="col-lg-6">
+                <div class="about-text go-to">
+                    <h6 class="theme-color lead">Лидер проекта Шеф Анна</h6>
+                    <p>Занимается разработкой <mark>теоретического и практического материала</mark> по грамматическому аспекту.</p>
+                    <div class="row about-list ">
+                        <div class="col-md-6">
+                            <div class="media">
+                                <label>Возраст</label>
+                                <p>19 лет</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="media">
+                                <label>E-mail</label>
+                                <p>info@domain.com</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="media">
+                                <label>Телефон для связи</label>
+                                <p>820-885-3321</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-avatar">
+                    <img src="{% static 'img/Anna_Chef.jpg' %}" class="img-fluid img-thumbnail " title="" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section about-section gray-bg mb-5 mt-5" id="about">
+    <div class="container">
+        <div class="row align-items-center flex-row-reverse">
+            <div class="col-lg-6">
+                <div class="about-text go-to">
+                    <h6 class="theme-color lead">Участник проекта проекта Тарасов Святослав</h6>
+                    <p>Занимается разработкой <mark>визуальной и технической</mark> составляющей сайта</p>
+                    <div class="row about-list ">
+                        <div class="col-md-6">
+                            <div class="media">
+                                <label>Возраст</label>
+                                <p>19 лет</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="media">
+                                <label>E-mail</label>
+                                <p>info@domain.com</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="media">
+                                <label>Телефон для связи</label>
+                                <p>820-885-3321</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-avatar">
+                    <img src="{% static 'img/Slava.jpg' %}" class="img-fluid img-thumbnail " title="" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section about-section gray-bg mb-5 mt-5" id="about">
+    <div class="container">
+        <div class="row align-items-center flex-row-reverse">
+            <div class="col-lg-6">
+                <div class="about-text go-to">
+                    <h6 class="theme-color lead">Участник проекта Багаев Илья</h6>
+                    <p>Занимается разработкой <mark>лексического аспекта</mark> заполнения сайта</p>
+                    <div class="row about-list ">
+                        <div class="col-md-6">
+                            <div class="media">
+                                <label>Возраст</label>
+                                <p>19 лет</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="media">
+                                <label>E-mail</label>
+                                <p>info@domain.com</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="media">
+                                <label>Телефон для связи</label>
+                                <p>820-885-3321</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-avatar">
+                    <img src="{% static 'img/Ilya.jpg' %}" class="img-fluid img-thumbnail " title="" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+{% endblock main_data %}
