@@ -22,6 +22,18 @@
         <li class="nav-item">
             <a class="nav-link" style='font-size:26px' href="#">Практика</a>
         </li>
+        {% if not user.is_authenticated %}
+            <li class="nav-item">
+                <a class="nav-link {% if view_name == 'users:signup' %}active{% endif %}" style='font-size:26px' href="{% url 'users:signup' %}">Регистрация</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {% if view_name == 'users:login' %}active{% endif %}" style='font-size:26px' href="{% url 'users:login' %}">Войти</a>
+            </li>
+        {% else %}
+            <li class="nav-item">
+                <a class="nav-link {% if view_name == 'users:logout' %}active{% endif %}" style='font-size:26px' href="{% url 'users:logout' %}">Выйти</a>
+            </li>
+        {% endif %}
       {% endwith %}
       </ul>
     </div>

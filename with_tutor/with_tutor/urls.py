@@ -20,5 +20,7 @@ urlpatterns = [
     path('', include('about.urls', namespace='about')),
     path('vocabulary/', include('vocabulary.urls', namespace='vocabulary')),
     path('grammar/', include('grammar.urls', namespace='grammar')),
+    path('auth/', include('users.urls', namespace='users')),
+    path('auth/', include('django.contrib.auth.urls')),
     path('admin/', admin.site.urls),
 ]
