@@ -3,7 +3,7 @@ from .models import VocabularyMaterial
 # Register your models here.
 
 class VocabularyAdmin(admin.ModelAdmin):
-    list_display = ('title', 'text', 'pub_date')
+    list_display = ('pk', 'title', 'text', 'pub_date')
     empty_value_display = '-пусто-'
 
 

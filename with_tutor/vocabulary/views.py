@@ -15,3 +15,11 @@ def vocabulary_materials(request):
         'title': 'Лексика'
     }
     return render(request, template, context)
+
+def vocabulary_detail(request, material_id):
+    template = 'material_detail.html'
+    material = VocabularyMaterial.objects.get(pk=material_id)
+    context = {
+        'material': material
+    }
+    return render(request, template, context)

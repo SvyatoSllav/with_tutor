@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main_data %}
+<div class="card">
+    <div class="card-header">
+      <h4>{{ material.title }}</h4>
+    </div>
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">
+        <p>{{ material.text }}</p>
+      </blockquote>
+    </div>
+  </div>
+{% endblock main_data %}

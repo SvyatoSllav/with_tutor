@@ -3,17 +3,16 @@
 {% load static %}
 {% block main_data %}
     {% for material in page_obj %}
-        <div class="card text-center mb-5 mt-5">
+        <div class="card text-center mb-5">
             <div class="card-body">
-                <h5 class="card-title"> {{ material.title }} <span style='color:red'>Здесь будет тема</span> </h5>
-                <p class="card-text">{{ material.text }} <span style='color:red'>Здесь будет текст</span></p>
-                    <a href="#" class="btn btn-primary">Здесь будет ссылка на саму запись</a>
+                <h5 class="card-title"> {{ material.title| truncatewords:7 }} </h5>
+                <p class="card-text">{{ material.text| truncatewords:35 }}</p>
+                <a href="{% url 'grammar:grammar_detail' material.id %}" class="btn btn-primary">Ссылка на запись</a>
             </div>
             <div class="card-footer text-muted">
                 2 days ago
             </div>
         </div>
-        {% comment %} {% if not forloop.last %} <hr> {% endif %} {% endcomment %}
     {% endfor %}
     {% include 'includes/paginator.html' %}
 {% endblock main_data %}

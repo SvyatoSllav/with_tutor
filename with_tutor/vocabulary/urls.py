@@ -6,6 +6,6 @@ app_name = 'vocabulary'
 
 
 urlpatterns = [
-    path('', views.vocabulary_materials, name='vocabulary_materials')
+    path('', views.vocabulary_materials, name='vocabulary_materials'),
+    path('vocabulary_detail/<int:material_id>/', views.vocabulary_detail, name='vocabulary_detail')
 ]
-

@@ -11,6 +11,14 @@ def grammar_materials(request):
     page_obj = paginator.get_page(page_number)
     context = {
         'page_obj': page_obj,
-        'title': 'Грамматика'
+        'title': 'Грамматика',
+    }
+    return render(request, template, context)
+
+def grammar_detail(request, material_id):
+    template = 'material_detail.html'
+    material = GrammarMaterial.objects.get(pk=material_id)
+    context = {
+        'material': material
     }
     return render(request, template, context)
