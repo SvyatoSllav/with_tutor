@@ -25,7 +25,14 @@ SECRET_KEY = 'b@898=s$m9#h7dwhap6(+zpm_upgps6fc&aryix_jrx(^tx49!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    '[::1]',
+    'testserver',
+    'www.evencat.pythonanywhere.com',
+    'evencat.pythonanywhere.com',
+]
 
 
 # Application definition
