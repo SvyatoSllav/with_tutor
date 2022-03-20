@@ -134,3 +134,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 LOGIN_URL = 'users:login'
 LOGIN_REDIRECT_URL = 'about:index'
+DEFAULT_AUTO_FIELD='django.db.models.AutoField'
