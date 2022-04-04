@@ -8,30 +8,26 @@
       {% with request.resolver_match.view_name as view_name %}
       <ul class="nav nav-pills">
         <li class="nav-item">
-          <a class="nav-link {% if view_name == 'about:index' %}active{% endif %}" style='font-size:26px' href="{% url 'about:index' %}">О нас</a>
+            <a class="nav-link {% if view_name == 'grammar:grammar' %}active{% endif %}" style="font-size:26px" href="{% url 'grammar:grammar' %}">Грамматика</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link {% if view_name == 'vocabulary:vocabulary_materials' %}active{% endif %}" style='font-size:26px' href="{% url 'vocabulary:vocabulary_materials' %}">Лексика</a>
+            <a class="nav-link {% if view_name == 'vocabulary:vocabulary_materials' %}active{% endif %}" style="font-size:26px" href="{% url 'vocabulary:vocabulary_materials' %}">Задания и упражнения</a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link {% if view_name == 'grammar:grammar' %}active{% endif %}" style='font-size:26px' href="{% url 'grammar:grammar' %}">Грамматика</a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link" style='font-size:26px' href="#">Практика</a>
+            <a class="nav-link {% if view_name == 'reading:reading_materials' %}active{% endif %}" style="font-size:26px" href="{% url 'reading:reading_materials' %}">Чтение</a>
         </li>
         {% if not user.is_authenticated %}
             <li class="nav-item">
-                <a class="nav-link link-light {% if view_name == 'users:signup' %}active{% endif %}" style='font-size:26px' href="{% url 'users:signup' %}">Регистрация</a>
+                <a class="nav-link link-light {% if view_name == 'users:signup' %}active{% endif %}" style="font-size:26px" href="{% url 'users:signup' %}">Регистрация</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link link-light {% if view_name == 'users:login' %}active{% endif %}" style='font-size:26px' href="{% url 'users:login' %}">Войти</a>
+                <a class="nav-link link-light {% if view_name == 'users:login' %}active{% endif %}" style="font-size:26px" href="{% url 'users:login' %}">Войти</a>
             </li>
         {% else %}
             <li class="nav-item">
-                <a class="nav-link link-light {% if view_name == 'users:logout' %}active{% endif %}" style='font-size:26px' href="{% url 'users:logout' %}">Выйти</a>
+                <a class="nav-link link-light {% if view_name == 'users:logout' %}active{% endif %}" style="font-size:26px" href="{% url 'users:logout' %}">Выйти</a>
             </li>
         {% endif %}
       {% endwith %}

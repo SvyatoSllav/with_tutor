@@ -20,19 +20,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'b@898=s$m9#h7dwhap6(+zpm_upgps6fc&aryix_jrx(^tx49!'
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'b@898=s$m9#h7dwhap6(+zpm_upgps6fc&aryix_jrx(^tx49!')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = bool( os.environ.get('DJANGO_DEBUG', True))
 
-ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1',
-    '[::1]',
-    'testserver',
-    'www.evencat.pythonanywhere.com',
-    'evencat.pythonanywhere.com',
-]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -48,7 +41,9 @@ INSTALLED_APPS = [
     'vocabulary.apps.VocabularyConfig',
     'grammar.apps.GrammarConfig',
     'users.apps.UsersConfig',
-    'core.apps.CoreConfig'
+    'core.apps.CoreConfig',
+    'reading.apps.ReadingConfig',
+    'sorl.thumbnail'
 ]
 
 MIDDLEWARE = [
@@ -80,7 +75,8 @@ TEMPLATES = [
 ]
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 WSGI_APPLICATION = 'with_tutor.wsgi.application'
 
 

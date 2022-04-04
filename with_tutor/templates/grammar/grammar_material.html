@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+{% load thumbnail %}
+{% block title %}
+    {{ title }}
+{% endblock title %}
+{% block main_data %}
+    <div class="card text-center mb-5">
+        <div class="card-body">
+            <h5 class="card-title">{{ material.title }}</h5>
+            <p class="card-text">
+                {{ material.text }}
+            </p>
+            {% if material.image %}
+                {% thumbnail material.image "700x500" crop="center" as im %}
+                    <img class="mb-3" src="{{ im.url }}">
+                    <br>
+                {% endthumbnail %}
+        {% endif %}
+    </div>
+</div>
+{% endblock main_data %}

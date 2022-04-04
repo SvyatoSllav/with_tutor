@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load thumbnail %}
+{% block title %}
+    {{ title }}
+{% endblock title %}
+{% load static %}
+{% block main_data %}
+    {% for material_theme in page_obj %}
+        <div class="card text-center mb-5">
+            <div class="card-body">
+                <h5 class="card-title">{{ material_theme.title| truncatewords:7 }}</h5>
+                <p class="card-text">
+                    {{ material_theme.description| truncatewords:35 }}
+                </p>
+                {% thumbnail material_theme.image "700x500" crop="center" as im %}
+                    <img class="mb-3" src="{{ im.url }}">
+                    <br>
+                {% endthumbnail %}
+                <a href="{% url 'grammar:grammar_subsection' material_theme.id %}"
+                   class="btn btn-primary">Подразделы</a>
+            </div>
+        </div>
+    {% endfor %}
+    {% include 'includes/paginator.html' %}
+{% endblock main_data %}

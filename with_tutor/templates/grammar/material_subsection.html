@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+{% load thumbnail %}
+{% block title %}
+    Раздел {{ title }}
+{% endblock title %}
+{% block main_data %}
+    {% for subsection in subsections %}
+        <div class="card text-center mb-5">
+            <div class="card-body">
+                <h5 class="card-title">{{ subsection.title| truncatewords:7 }}</h5>
+                <p class="card-text">
+                    {{ subsection.description| truncatewords:75 }}
+                </p>
+                {% thumbnail subsection.image "700x500" crop="center" as im %}
+                    <img class="mb-3" src="{{ im.url }}">
+                    <br>
+                {% endthumbnail %}
+            {% for material in materials %}
+                <a href="{% url 'grammar:grammar_material' material.id %}"
+                   class="btn btn-primary">{{ material.text }}</a>
+            {% endfor %}
+        </div>
+    </div>
+{% endfor %}
+{% endblock main_data %}

@@ -6,6 +6,7 @@ app_name = 'grammar'
 
 
 urlpatterns = [
-    path('', views.grammar_materials, name='grammar'),
-    path('grammar_detail/<int:material_id>/', views.grammar_detail, name='grammar_detail')
+    path('', views.grammar_theme, name='grammar'),
+    path('grammar_subsection/<int:material_theme_id>/', views.grammar_subsection, name='grammar_subsection'),
+    path('grammar_material/<int:grammar_material_id>/', views.grammar_material, name='grammar_material' ),
 ]
