@@ -1,1 +1,1 @@
-web: gunicorn with_tutor.with_tutor.wsgi --log-file -
+web: gunicorn --chdir with_tutor with_tutor.wsgi
