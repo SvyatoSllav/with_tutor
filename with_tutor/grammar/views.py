@@ -1,4 +1,3 @@
-import sunau
 from django.shortcuts import get_object_or_404, render, get_list_or_404
 from django.core.paginator import Paginator
 from .models import GrammarMaterial, GrammarTheme, GrammarSubsections
