@@ -42,5 +42,5 @@ class ReadingMaterial(models.Model):
     subsection = models.ForeignKey(
         ReadingSubsections,
         on_delete=models.CASCADE,
-        related_name='Reading_material',
+        related_name='reading_material',
     )
