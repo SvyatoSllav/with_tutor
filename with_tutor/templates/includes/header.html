@@ -16,7 +16,7 @@
         </li>
 
         <li class="nav-item">
-            <a class="nav-link {% if view_name == 'reading:reading_materials' %}active{% endif %}" style="font-size:26px" href="{% url 'reading:reading_materials' %}">Чтение</a>
+            <a class="nav-link {% if view_name == 'reading:reading_theme' %}active{% endif %}" style="font-size:26px" href="{% url 'reading:reading_theme' %}">Чтение</a>
         </li>
         {% if not user.is_authenticated %}
             <li class="nav-item">
