@@ -7,4 +7,4 @@ Pillow==9.1.0
 psycopg2==2.9.3
 sorl-thumbnail==12.8.0
 sqlparse==0.4.2
-whitenoise==6.0.06
+whitenoise==6.0.0
