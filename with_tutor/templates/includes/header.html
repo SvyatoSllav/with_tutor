@@ -1,11 +1,11 @@
 {% load static %}
 <nav class="navbar navbar-light" style="background-color: lightskyblue">
     <div class="container">
-        <a class="navbar-brand p-0" href="../main-menu/main-menu.html">
-            <!-- Нужно сделать христианскую ссылку -->
+        <a class="navbar-brand p-0" href="{% url 'main_menu' %}">
             <img src="{% static 'img/logos.png' %}" width="100" height="100" class="d-inline-block align-top mb-4"
                 alt="">
-            <span style="color:tomato; font-size:31px" class=''>With</span> <span style="font-size:31px">tutor</span>
+            <span style="color:tomato; font-size:31px">With</span>
+            <span style="font-size:31px">tutor</span>
         </a>
         {% with request.resolver_match.view_name as view_name %}
         <ul class="nav nav-pills">
