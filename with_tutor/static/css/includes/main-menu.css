@@ -1,0 +1,31 @@
+.slider {
+    background-color: coral;
+    padding: 20px 0px 10px;
+}
+.slider__item {
+    background-image: url(../../img/teacher1.jpg);
+    min-height: 440px;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slick-dots li button {
+    width: 14px;
+    height: 14px;
+    background-color: rgba(98, 98, 98, 0.5);
+    border-radius: 50%;
+    }
+    
+    .slick-dots li.slick-active button {
+        background-color: #fff;
+    }
+    
+    .slick-dots li button::before {
+        display: none;
+    }
+    
+    .slick-dots li {
+        margin: 0px 9px;
+        width: auto;
+        height: auto;
+    }

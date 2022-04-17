@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block links %}
+<link rel="stylesheet" href="../../static/css/includes/slick.css">
+<link rel="stylesheet" href="../../static/css/includes/slick-theme.css">
+<link rel="stylesheet" href="../../static/css/includes/main-menu.css">
 {% comment %} Сюда прописываешь все линки типа подключение иконок, шрифтов и бла-бла {% endcomment %}
 <link rel="stylesheet" href="#">
 {% endblock links %}
@@ -48,8 +51,8 @@
 </section>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/main.js"></script>
+<script src="../../static/js/main.js"></script>
+<script src="../../static/js/slick.min.js"></script>
 
 
 {% endblock main_data %}
