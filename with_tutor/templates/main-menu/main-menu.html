@@ -1,17 +1,14 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block links %}
-<link rel="stylesheet" href="../../static/css/includes/slick.css">
-<link rel="stylesheet" href="../../static/css/includes/slick-theme.css">
-<link rel="stylesheet" href="../../static/css/includes/main-menu.css">
-{% comment %} Сюда прописываешь все линки типа подключение иконок, шрифтов и бла-бла {% endcomment %}
-<link rel="stylesheet" href="#">
+<link rel="stylesheet" href="{% static 'css/includes/slick.css' %}">
+<link rel="stylesheet" href="{% static 'css/includes/slick-theme.css' %}">
+<link rel="stylesheet" href="{% static 'css/includes/main-menu.css' %}">
 {% endblock links %}
 {% block title %}
-{% comment %} Сюда по идее нужно прописывать тайтл, но это тоже нужно делать мне, так как там переменная передаётся,а не вручную прописывается {% endcomment %}
+Main-menu
 {% endblock title %}
 {% block main_data %}
-{% comment %} Сюда все что идет в блок main_data в base.html {% endcomment %}
 <section class="slider">
     <div class="container">
         <div class="slider__inner">
