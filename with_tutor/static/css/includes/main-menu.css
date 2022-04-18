@@ -1,10 +1,10 @@
 .slider {
-    background-color: coral;
+    background: linear-gradient(blue, pink);
     padding: 20px 0px 10px;
 }
 .slider__item {
     background-image: url(../../img/teacher1.jpg);
-    min-height: 440px;
+    min-height: 600px;
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -28,4 +28,13 @@
         margin: 0px 9px;
         width: auto;
         height: auto;
+    }
+
+    .slider__inner {
+        position: relative;
+    }
+
+    .slider__item-title {
+        font-size:  40px;
+        position: absolute;
     }
