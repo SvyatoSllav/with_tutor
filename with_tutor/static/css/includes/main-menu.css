@@ -1,6 +1,6 @@
 .slider {
-    background: linear-gradient(blue, pink);
     padding: 20px 0px 10px;
+    background-color: azure;
 }
 .slider__item {
     background-image: url(../../img/teacher1.jpg);
@@ -37,4 +37,7 @@
     .slider__item-title {
         font-size:  40px;
         position: absolute;
+        color: rgb(242, 209, 143);
+        padding-top: 130px;
+        padding-left: 600px;
     }
