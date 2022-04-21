@@ -1,10 +1,13 @@
-a {
-    text-decoration: none
-}
-.container {
-    font-size: 20px;
+* {
+    box-sizing: border-box;
+    display: inline-block
 }
 
-.container:hover {
-    content: "#";
+.footer {
+    background: linear-gradient(white, #FFCB7C);
+    display: flex
+}
+
+.container {
+    background: linear-gradient(white, #FFCB7C)
 }
