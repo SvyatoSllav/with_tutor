@@ -1,13 +1,10 @@
-* {
-    box-sizing: border-box;
-    display: inline-block
+a {
+    text-decoration: none
 }
-
-.footer {
-    background: linear-gradient(white, #FFCB7C);
-    display: flex
-}
-
 .container {
-    background: linear-gradient(white, #FFCB7C)
+    font-size: 20px;
+}
+
+.container:hover {
+    content: "#";
 }
