@@ -30,8 +30,10 @@ def grammar_subsection(request, material_theme_id):
 def grammar_material(request, grammar_material_id):
     template='grammar/grammar_material.html'
     material = get_object_or_404(GrammarMaterial, id=grammar_material_id)
+    audio = GrammarVoices.objects.filter(material=material)
     context = {
         'title': 'random_material',
-        'material': material
+        'material': material,
+        'audio': audio
     }
     return render(request, template, context)

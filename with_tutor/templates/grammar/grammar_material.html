@@ -11,6 +11,12 @@
             <p class="card-text">
                 {{ material.text }}
             </p>
+            
+            {% if material.voice %}
+                <audio controls>
+                    <source src="{{ material.voice.url }}" type="audio/mp3"/>
+                </audio>
+            {% endif %}
             {% if material.image %}
                 {% thumbnail material.image "700x500" crop="center" as im %}
                     <img class="mb-3" src="{{ im.url }}">
