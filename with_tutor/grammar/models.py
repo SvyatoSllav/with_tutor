@@ -32,6 +32,7 @@ class GrammarMaterial(models.Model):
     title = models.CharField(max_length=200)
     text = models.TextField()
     pub_date = models.DateTimeField(auto_now_add=True)
+    voice = models.FileField(upload_to='grammar_voices')
     image = models.ImageField(
         'Image',
         upload_to='grammar_material',
@@ -41,13 +42,4 @@ class GrammarMaterial(models.Model):
         GrammarSubsections,
         on_delete=models.CASCADE,
         related_name='grammar_material',
-    )
-
-
-class GrammarVoices(models.Model):
-    voice = models.FileField(upload_to='grammar_voices')
-    material = models.ForeignKey(
-        GrammarMaterial,
-        on_delete=models.CASCADE,
-        related_name='material_voices'
     )
