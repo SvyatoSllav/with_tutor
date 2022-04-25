@@ -1,0 +1,18 @@
+{% load static %}
+{% block links %}
+    <link rel="stylesheet" href="{% static 'css/includes/contact.css' %}">
+{% endblock links %}
+{% block contact %}
+<div class="wrapper">
+    <div class="icon-telegramm">
+        <a href="https://t.me/withtutorbot">
+            <span class="icon-telegramm__title">
+                <h1>Написать нам</h1>
+            </span>
+            <span class="icon-telegramm__img">
+                <img src="{% static 'img/contact.png' %}" alt="">
+            </span>
+        </a>
+    </div>
+</div>
+{% endblock contact %}
