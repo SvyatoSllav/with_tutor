@@ -1,12 +1,19 @@
-{% load static %}
-{% block footer %}
-<link rel="stylesheet" href="{% static 'css/includes/footer.css' %}">
-<footer class="border-top text-center py-3 card-footer sticky-top">
-  <img src="{% static 'img/logos.png' %}" width="100" height="100" class="d-inline-block align-top" alt="">
-  <p style="font-size:23px">© 2021 Copyright <span style="color:tomato" class=''>With</span> <span>tutor</span>
-  </p>
-  <span class="container link about">
-    <a href="{% url 'about:index' %}">О нас</a>
-  </span>
+{% block links %}
+<link rel="stylesheet" href="../../static/css/includes/footer.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+{% endblock links %}
+<footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__inner">
+                <div class="footer__logo">WT</div>
+                <div class="footer_text">
+                    <div class="footer__title">With Tutor © 2022</div>
+                    <span class="footer__safe">Все права защищенны</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
-{% endblock footer %}
