@@ -24,7 +24,7 @@ body {
 
 .footer__inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 120px;
     position: relative;
@@ -48,8 +48,8 @@ body {
 
 .footer__safe {
     position: absolute;
-    bottom: 36px;
-    right: 555px;
+    bottom: 30px;
+    right: 450px;
     font-weight: 400;
     font-size: 19px;
     line-height: 23px;
