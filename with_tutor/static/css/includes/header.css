@@ -35,14 +35,9 @@ li {
 }
 
 .header {
-<<<<<<< HEAD
-    /* background: linear-gradient(rgba(255, 203, 124, 0.87) 1%, rgba(255, 200, 117, 0)); */
     background: -webkit-linear-gradient(180deg, rgb(255, 203, 124), rgb(255, 246, 232));
-background: -moz-linear-gradient(180deg, rgb(255, 203, 124), rgb(255, 246, 232));
-background: linear-gradient(180deg, rgb(255, 203, 124), rgb(255, 246, 232));
-=======
-    background: linear-gradient(rgba(255, 203, 124, 0.87) 1%, rgba(255, 200, 117, 0));
->>>>>>> 30e262d558a96a33e017b91977444161bd0f3160
+    background: -moz-linear-gradient(180deg, rgb(255, 203, 124), rgb(255, 246, 232));
+    background: linear-gradient(180deg, rgb(255, 203, 124), rgb(255, 246, 232));
 }
 
 .header__inner {
@@ -76,23 +71,12 @@ background: linear-gradient(180deg, rgb(255, 203, 124), rgb(255, 246, 232));
     margin-left: 20px;
 }
 
-<<<<<<< HEAD
-
 .header__menu a {
     font-weight: 400;
     font-size: 20px;
     padding-top: 9px;
     padding-bottom: 13px;
-=======
-.header__menu a {
-    font-weight: 500;
-    font-size: 20px;
-    padding-top: 9px;
-    padding-bottom: 13px;
-    line-height: 24px;
->>>>>>> 30e262d558a96a33e017b91977444161bd0f3160
 }
-
 .header__comme {
     padding-left: 100px;
 }

@@ -1,45 +1,53 @@
-{% load static %}
-{% block links %}
-<link rel="stylesheet" href="{% static 'css/includes/header.css' %}">
-<link rel="stylesheet" href="../../static/css/includes/header.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
-{% endblock links %}
-<header class="header">
+    <link rel="stylesheet" href="../../static/css/includes/header.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo">
-                    <a href="{% url 'main_menu' %}">
+                    <a href="#">
                         <span>WT</span>With_Tutor
+                        <!-- Название -->
                     </a>
                 </div>
                 <nav class="header__menu">
                     <ul>
                         <li>
-                            <a href="{% url 'grammar:grammar' %}">
+                            <a href="#">
                                 Теория
                             </a>
                         </li>
                         <li>
-                            <a href="{% url 'vocabulary:vocabulary_materials' %}">
+                            <a href="#">
                                 Практика
                             </a>
                         </li>
                         <li>
-                            <a href="{% url 'reading:reading_theme' %}">
+                            <a href="#">
                                 Чтение
                             </a>
 
                         </li>
                         <li class="header__comme">
-                            <a href="{% url 'users:login' %}">
+                            <a href="#">
                                 Войти
                             </a>
 
                         </li>
                         <li>
-                            <a href="{% url 'users:signup' %}">
+                            <a href="#">
                                 Регистрация
                             </a>
                         </li>
@@ -48,3 +56,8 @@
                 </nav>
             </div>
         </div>
+    </header>
+
+</body>
+
+</html>
