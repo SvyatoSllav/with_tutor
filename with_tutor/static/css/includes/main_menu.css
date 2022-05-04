@@ -1,0 +1,41 @@
+.main-menu {
+    background-color: rgba(255, 210, 142, 0.2);
+}
+
+.main__wrapper {
+    margin-left: 105px;
+}
+
+.main__title {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 800;
+font-size: 44px;
+line-height: 54px;
+color: #000000;
+
+width: 356px;
+height: 136px;
+}
+
+.main__text {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 29px;
+color: #000000;
+width: 304px;
+height: 170px;
+}
+
+.main__about {
+margin-top: 55px;
+width: 306px;
+height: 55px;
+display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(92.09deg, rgba(236, 192, 192, 0.37) 9.21%, rgba(224, 165, 165, 0.56) 95.59%);
+border-radius: 21px;
+}

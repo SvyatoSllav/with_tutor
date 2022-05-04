@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block links %}
+<link rel="stylesheet" href="{% static 'css/includes/slick.css' %}">
+<link rel="stylesheet" href="{% static 'css/includes/slick-theme.css' %}">
+<link rel="stylesheet" href="{% static 'css/includes/main-menu.css' %}">
+{% endblock links %}
+{% block title %}
+Main-menu
+{% endblock title %}
+{% block main_data %}
+<section class="slider">
+    <div class="container">
+        <div class="slider__inner">
+
+            <div class="slider__item">
+                <div class="slider__item-title">
+                    Вы можете многому научиться
+                </div>
+            </div>
+
+            <div class="slider__item">
+                <div class="slider__item-title">
+                    Ещё какой-то текст
+                </div>
+            </div>
+
+            <div class="slider__item">
+                <div class="slider__item-title">
+                    Может быть реклама
+                </div>
+            </div>
+
+            <div class="slider__item">
+                <div class="slider__item-title">
+                    Их можно удалить
+                </div>
+            </div>
+
+            <div class="slider__item">
+                <div class="slider__item-title">
+                    Или если понадобиться добавить
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="../../static/js/main.js"></script>
+<script src="../../static/js/slick.min.js"></script>
+
+
+{% endblock main_data %}
