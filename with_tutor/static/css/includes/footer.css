@@ -16,6 +16,7 @@ body {
     max-width: 1300px;
     margin: 0 auto;
     padding: 0px 15px;
+<<<<<<< HEAD
 }
 
 .footer{
@@ -58,3 +59,43 @@ body {
 
 }
 
+=======
+}
+
+.footer{
+    background: linear-gradient(rgba(255, 203, 124, 0) , rgba(255, 203, 124, 1) 99%);
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    position: relative;
+}
+
+.footer__logo {
+    color: #FFCB7C;
+    font-size: 25px;
+    font-weight: 300;
+    margin-right: 10px;
+    padding: 12px 6px;
+    background-color: #000000;
+    border-radius: 20px;
+}
+
+.footer_title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+}
+
+.footer__safe {
+    position: absolute;
+    bottom: 30px;
+    right: 450px;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 23px;
+}
+>>>>>>> 30e262d558a96a33e017b91977444161bd0f3160
