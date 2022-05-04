@@ -16,7 +16,6 @@ body {
     max-width: 1300px;
     margin: 0 auto;
     padding: 0px 15px;
-<<<<<<< HEAD
 }
 
 .footer{
@@ -59,9 +58,6 @@ body {
 
 }
 
-=======
-}
-
 .footer{
     background: linear-gradient(rgba(255, 203, 124, 0) , rgba(255, 203, 124, 1) 99%);
 }
@@ -71,7 +67,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 120px;
-    position: relative;
 }
 
 .footer__logo {
@@ -91,11 +86,7 @@ body {
 }
 
 .footer__safe {
-    position: absolute;
-    bottom: 30px;
-    right: 450px;
     font-weight: 400;
     font-size: 19px;
     line-height: 23px;
 }
->>>>>>> 30e262d558a96a33e017b91977444161bd0f3160
