@@ -21,7 +21,8 @@
                     <img class="mb-3" src="{{ im.url }}">
                     <br>
                 {% endthumbnail %}
-        {% endif %}
+            {% endif %}
+            {% if  material.test_link %} <a href="{{ material.test_link }}">Ссылка на тесты</a>{% endif %}
     </div>
 </div>
 {% endblock main_data %}

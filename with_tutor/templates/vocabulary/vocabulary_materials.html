@@ -9,6 +9,7 @@
                 <p class="card-text">{{ material.text| truncatewords:35 }}</p>
                     <a href="{% url 'vocabulary:vocabulary_detail' material.id %}" class="btn btn-primary">Ссылка на запись</a>
             </div>
+            {% if  material.test_link %} <a href="{{ material.test_link }}">Ссылка на тесты</a>{% endif %}
             <div class="card-footer text-muted">
                 2 days ago
             </div>
