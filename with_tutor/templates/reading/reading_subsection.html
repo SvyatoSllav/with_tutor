@@ -21,6 +21,7 @@
             {% for material in materials %}
                 <a href="{% url 'reading:reading_material' material.id %}"
                    class="btn btn-primary">{{ material.text| truncatewords:30 }}</a>
+                   <hr>
             {% endfor %}
         </div>
     </div>
