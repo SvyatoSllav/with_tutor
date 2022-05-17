@@ -20,7 +20,7 @@
                 {% endif %}
             {% for material in materials %}
                 <a href="{% url 'reading:reading_material' material.id %}"
-                   class="btn btn-primary">{{ material.text }}</a>
+                   class="btn btn-primary">{{ material.text| truncatewords:30 }}</a>
             {% endfor %}
         </div>
     </div>
