@@ -5,7 +5,7 @@
     Раздел {{ title }}
 {% endblock title %}
 {% block main_data %}
-    {% for subsection in subsections %}
+    {% for subsection in page_obj %}
         <div class="card text-center mb-5">
             <div class="card-body">
                 <h5 class="card-title">{{ subsection.title| truncatewords:7 }}</h5>
@@ -21,6 +21,7 @@
                    class="btn btn-primary">{{ material.text| truncatewords:30 }}</a>
                    <hr>
             {% endfor %}
+            {% include 'includes/paginator.html' %}
         </div>
     </div>
 {% endfor %}
