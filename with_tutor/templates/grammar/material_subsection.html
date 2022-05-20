@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 {% load static %}
 {% load thumbnail %}
+{% block links %}
+    <link rel="stylesheet" href="{% static 'css/material.css' %}">
+{% endblock links %}
 {% block title %}
     Раздел {{ title }}
 {% endblock title %}
@@ -17,8 +20,17 @@
                     <br>
                 {% endthumbnail %}
             {% for material in materials %}
-                <a href="{% url 'grammar:grammar_material' material.id %}"
-                   class="btn btn-primary">{{ material.text| truncatewords:30 }}</a>
+                <section>
+                    <div class="container">
+                        <div class="material__wraper">
+                            <div class="container-form">
+                                <a href="{% url 'grammar:grammar_material' material.id %}"
+                                class="">{{ material.text| truncatewords:30 }}</a>
+                            </div> 
+                        </div>
+                    </div>
+                </section>
+                
                    <hr>
             {% endfor %}
             {% include 'includes/paginator.html' %}

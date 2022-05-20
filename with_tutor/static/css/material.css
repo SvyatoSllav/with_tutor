@@ -1,0 +1,21 @@
+.material__wraper {
+    background: #FFFFFF;
+    border-radius: 38px;
+}
+
+.container-form {
+    background: rgba(255, 203, 124, 0.8);
+    border-radius: 38px;
+    Font: Montserrat;
+    height: 300;
+    font-size: 20px;
+    line-height: 30.48px;
+    text-align: justify;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 17px 40px;
+    color: #000000;
+    text-align: center;
+}

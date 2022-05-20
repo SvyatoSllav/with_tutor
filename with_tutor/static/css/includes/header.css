@@ -80,3 +80,21 @@ li {
 .header__comme {
     padding-left: 100px;
 }
+@media screen and (max-width: 768px) {
+    .header__menu__ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: raw;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-content: flex-end;
+        width: 370px;
+        margin-top:50px;
+    }
+
+    .header__comme {
+        padding-left: 0;
+    }
+}

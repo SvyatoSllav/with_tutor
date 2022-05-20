@@ -1,7 +1,7 @@
 {% load static %}
 {% block links %}
 <link rel="stylesheet" href="{% static 'css/includes/header.css' %}">
-<link rel="stylesheet" href="../../static/css/includes/header.css">
+{% comment %} <link rel="stylesheet" href="../../static/css/includes/header.css"> {% endcomment %}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
                     </a>
                 </div>
                 <nav class="header__menu">
-                    <ul>
+                    <ul class="header__menu__ul">
                         <li>
                             <a href="{% url 'grammar:grammar' %}">
                                 Теория
