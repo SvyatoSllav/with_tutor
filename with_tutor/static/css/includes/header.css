@@ -118,3 +118,25 @@ li {
         padding-left: 0;
     }
 }
+@media screen and (max-width: 351px) {
+    html{
+        overflow-x: hidden;
+    }
+    .header__menu__ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-content: flex-end;
+        width: 80px;
+        margin-top:50px;
+    }
+
+    .header__comme {
+        padding-left: 0;
+    }
+}
