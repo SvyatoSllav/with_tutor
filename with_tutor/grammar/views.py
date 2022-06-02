@@ -19,7 +19,7 @@ def grammar_subsection(request, material_theme_id):
     template = 'grammar/material_subsection.html'
     theme = get_object_or_404(GrammarTheme, id=material_theme_id)
     subsections = get_list_or_404(GrammarSubsections, theme=theme)
-    materials = [material for material in GrammarMaterial.objects.filter(subsection=subsections[0])]
+    materials = [material for material in GrammarMaterial.objects.filter(subsection=subsections[0]).order_by('id')]
     paginator = Paginator(subsections, 2)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
