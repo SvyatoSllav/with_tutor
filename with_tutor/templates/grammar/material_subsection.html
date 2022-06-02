@@ -11,7 +11,7 @@
     {% for subsection in page_obj %}
         <div class="card text-center mb-5">
             <div class="card-body">
-                <h5 class="card-title">{{ subsection.title| truncatewords:7 }}</h5>
+                <h5 class="card-title">{{ subsection.title| truncatewords:7 }} theme</h5>
                 <p class="card-text">
                     {{ subsection.description| truncatewords:75 }}
                 </p>
@@ -25,7 +25,7 @@
                         <div class="material__wraper">
                             <div class="container-form">
                                 <a href="{% url 'grammar:grammar_material' material.id %}"
-                                class="">{{ material.text| truncatewords:30 }}</a>
+                                class="">{{ material.title| truncatewords:10 }}</a>
                             </div> 
                         </div>
                     </div>
