@@ -6,7 +6,7 @@ from .models import VocabularyMaterial
 
 def vocabulary_materials(request):
     template = 'vocabulary/vocabulary_materials.html'
-    material = VocabularyMaterial.objects.all()
+    material = VocabularyMaterial.objects.all().order_by('id')
     paginator = Paginator(material, 2)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
