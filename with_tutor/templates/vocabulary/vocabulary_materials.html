@@ -7,11 +7,7 @@
             <div class="card-body">
                 <h5 class="card-title"> {{ material.title| truncatewords:7 }} </h5>
                 <p class="card-text">{{ material.text| truncatewords:35 }}</p>
-                    <a href="{% url 'vocabulary:vocabulary_detail' material.id %}" class="btn btn-primary">Ссылка на запись</a>
-            </div>
-            {% if  material.test_link %} <a href="{{ material.test_link }}">Ссылка на тесты</a>{% endif %}
-            <div class="card-footer text-muted">
-                2 days ago
+                    <a href="{{ material.test_link }}" class="btn btn-primary">Ссылка на тест</a>
             </div>
         </div>
     {% endfor %}
