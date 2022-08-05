@@ -1,6 +1,5 @@
 from django.contrib import admin
 from .models import ReadingTheme, ReadingSubsections, ReadingMaterial
-# Register your models here.
 
 class ReadingAdmin(admin.ModelAdmin):
     list_display = ('title', 'description', 'pub_date')
